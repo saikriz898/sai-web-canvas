@@ -888,7 +888,6 @@ const Portfolio = () => {
                             <div>
                                 <h4 className="font-bold text-white mb-8 text-lg">Get in Touch</h4>
                                 <ul className="space-y-4 text-sm text-slate-400">
-                                    <li className="flex items-center gap-3"><Mail size={16} className="text-indigo-400" /> saikrishnan2116@gmail.com</li>
                                     <li className="flex items-center gap-3"><MapPin size={16} className="text-purple-400" /> Pollachi, India</li>
                                 </ul>
                             </div>

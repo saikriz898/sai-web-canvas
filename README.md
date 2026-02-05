@@ -84,7 +84,6 @@ Getting started locally:
 - **LinkedIn**: [saikriz898](https://www.linkedin.com/in/saikriz898)
 - **GitHub**: [@saikriz898](https://github.com/saikriz898)
 - **Instagram**: [@sai__kriz](https://www.instagram.com/sai__kriz)
-- **Email**: [saikrishnan2116@gmail.com](mailto:saikrishnan2116@gmail.com)
 
 ---
 
