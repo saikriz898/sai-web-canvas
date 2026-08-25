@@ -366,11 +366,11 @@ export const certificationsData: Certification[] = [
 export const achievementsData: Achievement[] = [
   {
     id: 'createathon-runnerup',
-    title: 'Createathon Web Hackathon – Runner Up (4th Place)',
+    title: 'Createathon Web Hackathon – 4th Place Finalist',
     event: 'Department of CSE, Sri Eshwar College of Engineering',
     year: 'Dec 2024',
     desc: 'Secured 4th Place out of 40+ competing engineering teams. Designed and deployed a live event tracking platform within an intense 24-hour sprint.',
-    stat: 'Runner Up (4th Place)',
+    stat: '4th Place Finalist',
     badge: 'Hackathon Award',
     iconName: 'Award'
   },

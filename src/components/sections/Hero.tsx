@@ -358,14 +358,15 @@ export const Hero: React.FC = () => {
         <a
           href="#projects"
           className="flex flex-col items-center gap-1.5 group"
+          aria-label="Scroll to projects"
         >
           <motion.div
             animate={{ y: [0, 4, 0] }}
             transition={{ repeat: Infinity, duration: 1.8, ease: 'easeInOut' }}
             className="w-px h-7 bg-gradient-to-b from-transparent via-neutral-400 to-transparent rounded-full"
           />
-          <span className="font-mono text-xs tracking-wider text-neutral-400 group-hover:text-neutral-600 transition-colors">
-            scroll
+          <span className="font-mono text-xs font-medium tracking-wide text-neutral-400 group-hover:text-neutral-600 transition-colors">
+            Scroll to explore
           </span>
         </a>
       </motion.div>

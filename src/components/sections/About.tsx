@@ -59,12 +59,8 @@ export const About: React.FC = () => {
               transition={{ duration: 0.5 }}
               className="lg:col-span-7 space-y-4 text-neutral-600 text-base leading-relaxed text-left"
             >
-              <p className="text-neutral-800 text-lg font-medium leading-snug">
-                I’m <strong className="text-neutral-900 font-extrabold font-display">Sai Krishnan</strong>, a Computer Science student and project designer focused on turning ideas into well-engineered digital products.
-              </p>
-
-              <p>
-                I enjoy working at the intersection of <strong className="text-neutral-900 font-semibold">software engineering, AI, product design, and system architecture</strong> — from defining a problem and designing the product to building the underlying systems and refining the experience.
+              <p className="text-neutral-800 text-base font-medium leading-relaxed">
+                I work at the intersection of <strong className="text-neutral-900 font-semibold">software engineering, AI, product design, and system architecture</strong> — from defining a problem and designing the product to building the underlying systems and refining the experience.
               </p>
 
               <p>
@@ -103,7 +99,7 @@ export const About: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-mono text-xs font-semibold text-neutral-500 tracking-wider">
-                    Institution &amp; Location
+                    Current Institution
                   </h3>
                   <p className="font-display font-bold text-xs sm:text-sm text-neutral-900 mt-0.5 leading-tight">
                     Sri Eshwar College of Engineering, TN, India
