@@ -97,7 +97,7 @@ const BuilderTag: React.FC = () => {
 
             {/* Focus areas */}
             <div>
-              <p className="font-mono text-[9px] text-neutral-400 uppercase tracking-[0.2em] mb-0.5">
+              <p className="font-mono text-xs text-neutral-500 font-medium tracking-wider mb-0.5">
                 Focus
               </p>
               <p className="text-xs text-neutral-800 font-semibold tracking-wide">
@@ -110,13 +110,13 @@ const BuilderTag: React.FC = () => {
 
             {/* Education — secondary, muted */}
             <div>
-              <p className="font-mono text-[9px] text-neutral-400 uppercase tracking-[0.2em] mb-0.5">
+              <p className="font-mono text-xs text-neutral-500 font-medium tracking-wider mb-0.5">
                 Education
               </p>
               <p className="text-xs text-neutral-700 font-medium leading-snug">
                 B.Tech CSE &nbsp;·&nbsp; 2024 — 2028
               </p>
-              <p className="text-[10px] text-neutral-400 mt-0.5 leading-snug">
+              <p className="text-xs text-neutral-500 mt-0.5 leading-snug">
                 Sri Eshwar College of Engineering
               </p>
             </div>
@@ -221,7 +221,7 @@ export const Hero: React.FC = () => {
             >
               {/* Building line */}
               <div className="flex items-center gap-2 text-xs text-neutral-500">
-                <span className="font-mono text-[10px] font-bold text-indigo-600 uppercase tracking-widest">
+                <span className="font-mono text-xs font-bold text-indigo-600 tracking-wider">
                   BUILDING
                 </span>
                 <span className="text-neutral-300">·</span>
@@ -239,7 +239,7 @@ export const Hero: React.FC = () => {
               </div>
 
               {/* Bio paragraph */}
-              <p className="text-[14.5px] sm:text-[15.5px] text-neutral-600 leading-relaxed max-w-lg">
+              <p className="text-sm sm:text-base text-neutral-600 leading-relaxed max-w-lg">
                 I'm a computer science engineer exploring AI, full-stack development,
                 and product design — turning ideas into things people can actually use.
               </p>
@@ -251,7 +251,7 @@ export const Hero: React.FC = () => {
               initial="hidden"
               animate="visible"
               style={isReducedMotion ? {} : { y: proofY }}
-              className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[13px] text-neutral-500 mb-8"
+              className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs sm:text-sm text-neutral-500 mb-8"
             >
               <span>
                 <strong className="font-bold text-neutral-900 font-display">09</strong>
@@ -269,7 +269,7 @@ export const Hero: React.FC = () => {
               </span>
             </motion.div>
 
-            {/* BLOCK 5: Actions (Buttons on Row 1, Stylish Social Icon Buttons on Next Row) */}
+            {/* BLOCK 5: Actions */}
             <motion.div
               variants={fadeUp(0.30)}
               initial="hidden"
@@ -350,7 +350,7 @@ export const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* ══════════════ SCROLL INDICATOR — tiny, editorial ═════════════════ */}
+      {/* ══════════════ SCROLL INDICATOR ═════════════════ */}
       <motion.div
         style={isReducedMotion ? {} : { opacity: cueOp }}
         className="pt-4 pb-2 flex justify-center w-full shrink-0 relative z-10"
@@ -364,7 +364,7 @@ export const Hero: React.FC = () => {
             transition={{ repeat: Infinity, duration: 1.8, ease: 'easeInOut' }}
             className="w-px h-7 bg-gradient-to-b from-transparent via-neutral-400 to-transparent rounded-full"
           />
-          <span className="font-mono text-[8px] uppercase tracking-[0.22em] text-neutral-400 group-hover:text-neutral-600 transition-colors">
+          <span className="font-mono text-xs tracking-wider text-neutral-400 group-hover:text-neutral-600 transition-colors">
             scroll
           </span>
         </a>

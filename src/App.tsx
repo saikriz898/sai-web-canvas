@@ -59,7 +59,7 @@ export const App: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100 selection:text-indigo-900"
+          className="min-h-screen bg-slate-50 text-slate-900 selection:bg-neutral-900 selection:text-white"
         >
           <Navbar />
           <ScrollToTop />

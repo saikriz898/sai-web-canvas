@@ -100,11 +100,11 @@ export const Navbar: React.FC = () => {
           <a
             href={resumePdf}
             download="Sai_Krishnan_S_Resume.pdf"
-            className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 bg-neutral-900 text-white text-xs font-semibold font-mono rounded-xl hover:bg-neutral-800 transition-all shadow-2xs hover:shadow-xs"
+            className="hidden sm:inline-flex btn-secondary text-xs gap-1.5 px-3.5 py-1.5"
             aria-label="Download Resume"
           >
             <span>Resume</span>
-            <ArrowUpRight size={13} className="text-neutral-400" />
+            <ArrowUpRight size={13} className="text-neutral-500" />
           </a>
 
           <button

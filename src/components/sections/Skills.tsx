@@ -117,12 +117,12 @@ export const Skills: React.FC = () => {
                   {iconComponentMap[skill.iconName] || <Code2 size={24} className="text-neutral-800" />}
                 </div>
 
-                <h4 className="text-xs font-bold text-neutral-900 tracking-tight mb-0.5">
+                <h3 className="text-xs font-bold text-neutral-900 tracking-tight mb-0.5">
                   {skill.name}
-                </h4>
+                </h3>
 
                 {skill.level && (
-                  <span className="text-[10px] font-mono text-neutral-500 font-normal">
+                  <span className="text-xs font-mono text-neutral-500 font-normal">
                     {skill.level}
                   </span>
                 )}

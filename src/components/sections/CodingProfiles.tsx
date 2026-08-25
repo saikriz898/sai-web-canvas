@@ -15,12 +15,12 @@ export const CodingProfiles: React.FC = () => {
     <section id="coding-profiles" className="w-full py-16 lg:py-20 bg-[#fafaf8] border-t border-neutral-200/80 scroll-mt-20">
       <div className="container-custom">
         <div className="mb-8 text-left">
-          <span className="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-400">
+          <span className="font-mono text-xs font-semibold uppercase tracking-wider text-indigo-600">
             PROBLEM SOLVING PROOF
           </span>
-          <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 font-display tracking-tight mt-1">
+          <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 font-display tracking-tight mt-1">
             Competitive Coding Platforms
-          </h3>
+          </h2>
         </div>
 
         <div className="grid sm:grid-cols-3 gap-6 text-left">
@@ -38,15 +38,15 @@ export const CodingProfiles: React.FC = () => {
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <div className="w-10 h-10 rounded-lg bg-neutral-50 border border-neutral-100 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-lg bg-neutral-100 flex items-center justify-center">
                     {iconMap[profile.iconName] || <Code2 size={24} />}
                   </div>
                   <ExternalLink size={14} className="text-neutral-400 group-hover:text-neutral-900 transition-colors" />
                 </div>
 
-                <h4 className="text-base font-bold text-neutral-900 font-display tracking-tight">
+                <h3 className="text-base font-bold text-neutral-900 font-display tracking-tight">
                   {profile.platform}
-                </h4>
+                </h3>
                 <p className="font-mono text-xs text-neutral-600 font-medium mb-3">
                   @{profile.username}
                 </p>
@@ -56,7 +56,7 @@ export const CodingProfiles: React.FC = () => {
                     <TrendingUp size={13} className="text-emerald-600" />
                     <span>{profile.stats}</span>
                   </div>
-                  <div className="text-[11px] text-neutral-500">
+                  <div className="text-xs text-neutral-500">
                     {profile.rating}
                   </div>
                 </div>

@@ -113,46 +113,50 @@ export const Projects: React.FC = () => {
                       {project.tech.map((t, i) => (
                         <span
                           key={i}
-                          className="px-2 py-0.5 bg-neutral-100 text-neutral-700 font-mono text-[10px] font-medium rounded"
+                          className="px-2.5 py-0.5 bg-neutral-100 text-neutral-700 font-mono text-xs font-medium rounded-md"
                         >
                           {t}
                         </span>
                       ))}
                     </div>
 
-                    {/* Actions */}
-                    <div className="flex items-center justify-between">
-                      <button
-                        onClick={() => setActiveModalProject(project)}
-                        className="inline-flex items-center gap-1.5 font-mono text-xs font-semibold text-neutral-900 hover:text-neutral-600 transition-colors group/btn"
-                      >
-                        <span>View Architecture &amp; Case Study</span>
-                        <ArrowRight size={14} className="group-hover/btn:translate-x-0.5 transition-transform" />
-                      </button>
+                    {/* Actions Grouped Together */}
+                    <div className="flex items-center justify-between pt-2">
+                      <div className="flex items-center gap-3">
+                        <button
+                          onClick={() => setActiveModalProject(project)}
+                          className="inline-flex items-center gap-1.5 font-mono text-xs font-semibold text-neutral-900 hover:text-neutral-600 transition-colors group/btn"
+                        >
+                          <span>View Case Study</span>
+                          <ArrowRight size={14} className="group-hover/btn:translate-x-0.5 transition-transform" />
+                        </button>
 
-                      <div className="flex items-center gap-2">
-                        {project.github && project.github !== '#' && (
-                          <a
-                            href={project.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-1.5 text-neutral-400 hover:text-neutral-900 transition-colors"
-                            aria-label="GitHub Repo"
-                          >
-                            <Github size={16} />
-                          </a>
-                        )}
-                        {project.link && project.link !== '#' && (
-                          <a
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-1.5 text-neutral-400 hover:text-neutral-900 transition-colors"
-                            aria-label="Live Project"
-                          >
-                            <ExternalLink size={16} />
-                          </a>
-                        )}
+                        <div className="flex items-center gap-2 border-l border-neutral-200 pl-3">
+                          {project.github && project.github !== '#' && (
+                            <a
+                              href={project.github}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1 text-xs font-mono text-neutral-500 hover:text-neutral-900 transition-colors"
+                              aria-label="GitHub Repository"
+                            >
+                              <Github size={14} />
+                              <span>Code</span>
+                            </a>
+                          )}
+                          {project.link && project.link !== '#' && (
+                            <a
+                              href={project.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1 text-xs font-mono text-neutral-500 hover:text-neutral-900 transition-colors"
+                              aria-label="Live Demo"
+                            >
+                              <ExternalLink size={14} />
+                              <span>Demo</span>
+                            </a>
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -164,7 +168,7 @@ export const Projects: React.FC = () => {
 
         {/* Additional Projects Registry */}
         <div className="text-left">
-          <h3 className="font-mono text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-4">
+          <h3 className="font-mono text-sm font-semibold text-neutral-700 mb-4">
             {selectedCategory === 'all' ? 'Additional Software Projects' : 'Filtered Projects'}
           </h3>
 
@@ -180,10 +184,10 @@ export const Projects: React.FC = () => {
               >
                 <div>
                   <div className="flex justify-between items-start mb-2.5">
-                    <span className="font-mono text-[10px] font-medium text-neutral-700 bg-neutral-100 px-2 py-0.5 rounded">
+                    <span className="font-mono text-xs font-medium text-neutral-700 bg-neutral-100 px-2.5 py-0.5 rounded-md">
                       {project.category}
                     </span>
-                    <span className="font-mono text-[10px] text-neutral-400">
+                    <span className="font-mono text-xs text-neutral-400">
                       {project.date}
                     </span>
                   </div>
@@ -205,15 +209,17 @@ export const Projects: React.FC = () => {
                     >
                       Case Study
                     </button>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-3">
                       {project.github && project.github !== '#' && (
                         <a
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-neutral-400 hover:text-neutral-900 transition-colors"
+                          className="inline-flex items-center gap-1 text-xs font-mono text-neutral-500 hover:text-neutral-900 transition-colors"
+                          aria-label="GitHub Repo"
                         >
-                          <Github size={15} />
+                          <Github size={14} />
+                          <span>Code</span>
                         </a>
                       )}
                       {project.link && project.link !== '#' && (
@@ -221,9 +227,11 @@ export const Projects: React.FC = () => {
                           href={project.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-neutral-400 hover:text-neutral-900 transition-colors"
+                          className="inline-flex items-center gap-1 text-xs font-mono text-neutral-500 hover:text-neutral-900 transition-colors"
+                          aria-label="Live Demo"
                         >
-                          <ExternalLink size={15} />
+                          <ExternalLink size={14} />
+                          <span>Demo</span>
                         </a>
                       )}
                     </div>

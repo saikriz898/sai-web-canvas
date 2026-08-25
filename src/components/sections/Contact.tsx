@@ -16,29 +16,29 @@ export const Contact: React.FC = () => {
           description="Whether you are a recruiter, engineering leader, founder, or collaborator, feel free to reach out."
         />
 
-        {/* ── Executive Matte Contact Card ───────────────────────────────── */}
+        {/* ── Executive Contact Card ───────────────────────────────── */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="max-w-4xl mx-auto rounded-3xl bg-neutral-900 text-white p-8 sm:p-12 lg:p-14 shadow-[0_20px_50px_rgba(0,0,0,0.22)] border border-neutral-800/90 relative overflow-hidden text-left"
+          className="max-w-4xl mx-auto rounded-3xl bg-neutral-900 text-white p-8 sm:p-12 lg:p-14 shadow-xl border border-neutral-800 relative overflow-hidden text-left"
         >
           <div className="relative z-10 space-y-8">
             {/* Location Pill */}
             <div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-neutral-800/90 border border-neutral-700/80 rounded-full font-mono text-xs text-neutral-300 shadow-inner">
-                <MapPin size={13} className="text-neutral-400" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-neutral-800 border border-neutral-700/80 rounded-full font-mono text-xs text-neutral-200">
+                <MapPin size={13} className="text-neutral-300" />
                 <span>Pollachi / Coimbatore, Tamil Nadu, India</span>
               </div>
             </div>
 
             {/* Title & Subtitle */}
             <div className="space-y-3">
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display tracking-tight text-white leading-[1.08]">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display tracking-tight text-white leading-[1.08]">
                 Let's build something together.
-              </h3>
-              <p className="text-sm sm:text-base text-neutral-300 font-normal leading-relaxed max-w-2xl">
+              </h2>
+              <p className="text-sm sm:text-base text-neutral-200 font-normal leading-relaxed max-w-2xl">
                 Available for Full-Stack Development roles, Software Engineering Internships, AI Applications, and Technical Collaborations.
               </p>
             </div>

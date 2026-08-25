@@ -15,15 +15,15 @@ export const Badge: React.FC<BadgeProps> = ({
 }) => {
   const variantStyles = {
     primary: 'bg-neutral-900 text-white border-neutral-800',
-    accent: 'bg-indigo-50 text-indigo-700 border-indigo-100 font-semibold',
+    accent: 'bg-indigo-50 text-indigo-800 border-indigo-200 font-semibold',
     outline: 'bg-white text-neutral-700 border-neutral-200/80',
     neutral: 'bg-neutral-100 text-neutral-700 border-neutral-200/60 font-medium',
-    emerald: 'bg-emerald-50 text-emerald-700 border-emerald-200/80 font-semibold'
+    emerald: 'bg-emerald-50 text-emerald-800 border-emerald-200/80 font-semibold'
   };
 
   const sizeStyles = {
-    sm: 'text-[11px] px-2.5 py-0.5 rounded-md',
-    md: 'text-xs px-3 py-1 rounded-md'
+    sm: 'text-xs px-3 py-1 rounded-md',
+    md: 'text-xs px-3.5 py-1.5 rounded-md'
   };
 
   return (

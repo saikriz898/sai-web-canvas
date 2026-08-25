@@ -92,7 +92,7 @@ export const About: React.FC = () => {
                 </p>
                 <div className="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between font-mono text-xs text-neutral-500">
                   <span className="font-bold text-neutral-900">Sai Krishnan</span>
-                  <span>BUILDING PHILOSOPHY</span>
+                  <span>Building Philosophy</span>
                 </div>
               </div>
 
@@ -102,9 +102,9 @@ export const About: React.FC = () => {
                   <MapPin size={18} />
                 </div>
                 <div>
-                  <h4 className="font-mono text-[10px] font-bold text-neutral-400 uppercase tracking-widest">
-                    Institution & Location
-                  </h4>
+                  <h3 className="font-mono text-xs font-semibold text-neutral-500 tracking-wider">
+                    Institution &amp; Location
+                  </h3>
                   <p className="font-display font-bold text-xs sm:text-sm text-neutral-900 mt-0.5 leading-tight">
                     Sri Eshwar College of Engineering, TN, India
                   </p>

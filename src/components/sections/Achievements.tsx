@@ -16,12 +16,12 @@ export const Achievements: React.FC = () => {
     <section id="achievements" className="w-full py-16 lg:py-20 bg-white border-t border-neutral-200/80 scroll-mt-20">
       <div className="container-custom">
         <div className="mb-8 text-left">
-          <span className="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-400">
+          <span className="font-mono text-xs font-semibold uppercase tracking-wider text-indigo-600">
             RECOGNITIONS &amp; AWARDS
           </span>
-          <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 font-display tracking-tight mt-1">
+          <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 font-display tracking-tight mt-1">
             Hackathons &amp; Achievements
-          </h3>
+          </h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
@@ -36,17 +36,17 @@ export const Achievements: React.FC = () => {
             >
               <div>
                 <div className="flex justify-between items-start mb-3">
-                  <div className="w-9 h-9 rounded-lg bg-white border border-neutral-200 flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-lg bg-neutral-200/60 flex items-center justify-center">
                     {iconMap[award.iconName] || <Award size={18} className="text-neutral-800" />}
                   </div>
-                  <span className="font-mono text-[10px] text-neutral-400">
+                  <span className="font-mono text-xs text-neutral-500">
                     {award.year}
                   </span>
                 </div>
 
-                <h4 className="text-sm font-bold text-neutral-900 font-display tracking-tight mb-1">
+                <h3 className="text-sm font-bold text-neutral-900 font-display tracking-tight mb-1">
                   {award.title}
-                </h4>
+                </h3>
 
                 <p className="font-mono text-xs text-neutral-500 mb-2">
                   {award.event}

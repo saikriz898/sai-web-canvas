@@ -32,37 +32,16 @@ export const ScrollToTop: React.FC = () => {
           initial={{ opacity: 0, scale: 0.8, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.8, y: 20 }}
-          className="fixed bottom-6 right-6 z-40"
+          className="fixed bottom-6 right-6 z-50"
         >
           <motion.button
             onClick={scrollToTop}
-            whileHover={{ scale: 1.08, y: -3 }}
+            whileHover={{ scale: 1.08, y: -2 }}
             whileTap={{ scale: 0.92 }}
-            aria-label="Scroll to top"
-            className="relative w-12 h-12 bg-white text-slate-900 rounded-full flex items-center justify-center shadow-lg shadow-slate-900/10 border border-slate-200 focus:outline-none"
+            aria-label="Back to top"
+            className="relative w-11 h-11 bg-neutral-900 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-neutral-800 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
           >
-            <svg className="absolute inset-0 w-full h-full -rotate-90 pointer-events-none p-0.5">
-              <circle
-                cx="22"
-                cy="22"
-                r="20"
-                fill="none"
-                stroke="rgba(226, 232, 240, 0.6)"
-                strokeWidth="2"
-              />
-              <motion.circle
-                cx="22"
-                cy="22"
-                r="20"
-                fill="none"
-                stroke="#4f46e5"
-                strokeWidth="2"
-                strokeDasharray="0 1"
-                style={{ pathLength: scrollYProgress }}
-              />
-            </svg>
-
-            <ArrowUp size={18} className="text-slate-700 hover:text-indigo-600 transition-colors" />
+            <ArrowUp size={18} />
           </motion.button>
         </motion.div>
       )}

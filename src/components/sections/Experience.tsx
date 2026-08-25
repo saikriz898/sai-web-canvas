@@ -63,7 +63,7 @@ export const Experience: React.FC = () => {
               </p>
 
               <div className="space-y-3 mb-6">
-                <h4 className="font-mono text-xs font-semibold text-neutral-400 uppercase tracking-wider">
+                <h4 className="font-mono text-xs font-semibold text-neutral-600 mb-3">
                   Deliverables &amp; Architecture
                 </h4>
                 <div className="grid sm:grid-cols-2 gap-3">
@@ -83,7 +83,7 @@ export const Experience: React.FC = () => {
                 {exp.tech.map((t, i) => (
                   <span
                     key={i}
-                    className="px-2.5 py-1 bg-white border border-neutral-200 text-neutral-700 font-mono text-[10px] font-medium rounded"
+                    className="px-2.5 py-1 bg-white border border-neutral-200 text-neutral-700 font-mono text-xs font-medium rounded-md"
                   >
                     {t}
                   </span>
