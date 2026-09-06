@@ -38,10 +38,10 @@ export const App: React.FC = () => {
 
     requestAnimationFrame(raf);
 
-    // Initial load timer (fast & responsive)
+    // Initial load timer (designer preloader sequence)
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 350);
+    }, 1350);
 
     return () => {
       clearTimeout(timer);
@@ -59,7 +59,7 @@ export const App: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="min-h-screen bg-slate-50 text-slate-900 selection:bg-neutral-900 selection:text-white"
+          className="min-h-screen bg-[#fafaf8] text-neutral-900 selection:bg-neutral-900 selection:text-white font-sans antialiased"
         >
           <Navbar />
           <ScrollToTop />

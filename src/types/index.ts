@@ -30,6 +30,8 @@ export interface Experience {
   link: string;
   github: string;
   impact: string;
+  upcoming?: boolean;
+  status?: string;
 }
 
 export interface SkillItem {
@@ -56,6 +58,11 @@ export interface Certification {
   hours?: string;
   score?: string;
   credentialUrl?: string;
+  category?: string;
+  skillsLearned?: string[];
+  certificateId?: string;
+  featured?: boolean;
+  iconName?: string;
 }
 
 export interface Achievement {
@@ -77,6 +84,7 @@ export interface EducationItem {
   desc: string;
   highlights: string;
   accent: string;
+  courses?: string[];
 }
 
 export interface CodingProfile {

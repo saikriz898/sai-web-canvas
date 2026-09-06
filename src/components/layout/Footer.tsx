@@ -8,19 +8,19 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="w-full bg-neutral-950 text-white py-12 border-t border-neutral-800 text-left">
+    <footer className="w-full bg-[#fafaf8] text-neutral-900 py-12 border-t border-neutral-200/80 text-left">
       <div className="container-custom">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-neutral-800">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-neutral-200/80">
           <div className="space-y-1.5">
             <div className="flex items-center gap-2.5">
-              <div className="w-7 h-7 rounded-lg bg-white text-neutral-900 font-display font-extrabold text-xs flex items-center justify-center">
+              <div className="w-7 h-7 rounded-lg bg-neutral-900 text-white font-display font-extrabold text-xs flex items-center justify-center shadow-xs">
                 SK
               </div>
-              <span className="font-display font-bold text-base text-white tracking-tight">
+              <span className="font-display font-bold text-base text-neutral-900 tracking-tight">
                 Sai Krishnan S
               </span>
             </div>
-            <p className="text-xs text-neutral-400 font-mono">
+            <p className="text-xs text-neutral-500 font-mono">
               Builder · Engineer &nbsp;·&nbsp; B.Tech CSE (2024 — 2028)
             </p>
           </div>
@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="font-mono text-xs text-neutral-400 hover:text-white transition-colors"
+                className="font-mono text-xs text-neutral-600 hover:text-neutral-950 font-medium transition-colors"
               >
                 {link.name}
               </a>
@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
 
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-1.5 hover:text-white transition-colors"
+            className="flex items-center gap-1.5 hover:text-neutral-950 transition-colors font-medium cursor-pointer"
           >
             <span>Back to top</span>
             <ArrowUp size={13} />

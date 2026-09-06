@@ -10,7 +10,7 @@ import {
 } from '../types';
 
 export const navLinksData: NavLink[] = [
-  { name: 'Work', href: '#projects', iconName: 'Wrench' },
+  { name: 'Work', href: '#projects', iconName: 'FolderGit2' },
   { name: 'About', href: '#about', iconName: 'User' },
   { name: 'Experience', href: '#experience', iconName: 'Briefcase' },
   { name: 'Skills', href: '#skills', iconName: 'Code2' },
@@ -19,27 +19,178 @@ export const navLinksData: NavLink[] = [
 
 export const projectsData: Project[] = [
   {
-    id: 'datasential',
-    title: 'Datasential Security AI',
-    category: 'Cybersecurity / AI',
+    id: 'ruraldr-xai',
+    title: 'RuralDR-XAI — DR Screening AI',
+    category: 'Healthcare AI / XAI',
+    date: '2026',
+    tagline: 'Explainable AI diabetic retinopathy screening & clinical decision support for rural healthcare.',
+    desc: 'Evidence-grounded diabetic retinopathy screening and clinical decision-support system developed for SIH26038, sponsored by MathWorks.',
+    problem: 'Rural healthcare centers in India lack specialized ophthalmologists and interpretable AI diagnostics for early diabetic retinopathy screening in low-resource environments.',
+    solution: 'Engineered an evidence-grounded screening engine combining ICDR 5-class severity grading, fundus image quality assessment (FIQA), Grad-CAM/Grad-CAM++/Score-CAM explainability, and clinical report generation.',
+    keyFeatures: [
+      '5-Class ICDR Diabetic Retinopathy Severity Grading (Grade 0–4)',
+      'Automated Fundus Image Quality Assessment (FIQA) & Guidance',
+      'Retinal Lesion Localization (Microaneurysms, Exudates, Hemorrhages)',
+      'Grad-CAM, Grad-CAM++ & Score-CAM Explainability Pipelines',
+      'Evidence Consistency Engine & Confidence Calibration',
+      'FastAPI Screening Dashboard & Automated Clinical PDF Reporting'
+    ],
+    tech: ['Python', 'PyTorch', 'OpenCV', 'FastAPI', 'MATLAB', 'Simulink', 'Explainable AI'],
+    featured: true,
+    github: 'https://github.com/Surya-RedOps/RuralDR-XAI',
+    link: 'https://github.com/Surya-RedOps/RuralDR-XAI',
+    color: 'from-emerald-500/20 to-teal-600/20',
+    iconName: 'Cpu',
+    metrics: 'SIH26038 Project · Sponsored by MathWorks'
+  },
+  {
+    id: 'lifeos-agentverse',
+    title: 'LifeOS — AgentVerse Hackathon',
+    category: 'Multi-Agent AI · AI Agents',
+    date: '2026',
+    tagline: 'Autonomous multi-agent AI workforce for software & product development workflows.',
+    desc: 'Autonomous AI ecosystem developed for the AgentVerse Hackathon, designed as an AI workforce for software and product development workflows. Combines specialized AI agents for research, planning, financial estimation, persistent memory, quality/security review, and stakeholder communication with collaborative multi-agent orchestration.',
+    problem: 'Product development teams spend immense manual effort orchestrating market research, milestone roadmapping, infrastructure cost estimation, and security QA across fragmented tools.',
+    solution: 'Designed a Single-Agent + Multi-Agent fleet architecture with centralized context, agent coordination, retry/fallback mechanisms, and automated verification workflows using LangGraph and FastAPI.',
+    keyFeatures: [
+      'Single-Agent + Multi-Agent Fleet Orchestration Architecture',
+      'Research Agent: Multi-Source Web, Paper & Repo Research Verification',
+      'Planning Agent: LangGraph Milestone-Based Structured Execution Plans',
+      'Finance Agent: Development, Infrastructure & Multi-Cloud Costing',
+      'Memory Agent: pgvector Persistent Memory & Knowledge Graph Visualizer',
+      'Review Agent: Automated QA & Security Review with Approval Gate',
+      'Communication Agent: Stakeholder-Ready Documents & Presentations'
+    ],
+    tech: ['Python', 'FastAPI', 'LangGraph', 'LangChain', 'Google Gemini', 'Next.js', 'PostgreSQL', 'pgvector', 'Docker'],
+    featured: true,
+    github: 'https://github.com/saikriz898/AgentVerse-Hackathon',
+    link: 'https://github.com/saikriz898/AgentVerse-Hackathon',
+    color: 'from-indigo-500/20 to-purple-600/20',
+    iconName: 'Cpu',
+    metrics: 'AgentVerse Hackathon Build'
+  },
+  {
+    id: 'iniq-platform',
+    title: 'INIQ — Interview Intelligence Platform',
+    category: 'Full-Stack AI / Web Engineering',
+    date: '2026',
+    tagline: 'Full-stack AI-powered interview preparation platform built with React 19 & Node.js.',
+    desc: 'Full-stack interview preparation platform designed to provide users with an intelligent, interactive environment for preparing for technical and interview-related questions.',
+    problem: 'Engineering candidates lack real-time structured feedback and interactive AI assistance when practicing technical interview scenarios.',
+    solution: 'Built a Client–Server architecture using React 19, Node.js/Express, JWT session authentication, protected AI chat assistance, and rate limiting.',
+    keyFeatures: [
+      'React 19 + Vite + Tailwind CSS & Node.js Architecture',
+      'Protected AI Chat Functionality for Interactive Interview Prep',
+      'JWT Authentication & Bcrypt Password Hashing',
+      'API Rate Limiting & Request Queuing Protection',
+      'MongoDB / Mongoose Persistent Application Store',
+      'CORS-Controlled Client/Server Proxying'
+    ],
+    tech: ['React 19', 'Vite', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
+    featured: true,
+    github: 'https://github.com/saikriz898/',
+    link: 'https://github.com/saikriz898/',
+    color: 'from-blue-500/20 to-cyan-500/20',
+    iconName: 'Code2',
+    metrics: 'Production Web App'
+  },
+  {
+    id: 'datasentinel-ai',
+    title: 'DataSentinel AI — Privacy & Security Platform',
+    category: 'Privacy Engineering / Cybersecurity',
     date: 'Mar 2026',
-    tagline: 'Intelligent sensitive data detection & monitoring platform built for Cyberathon.',
-    desc: 'Engineered an enterprise security platform that scans organizational assets for exposed PII and sensitive credentials using AI-assisted pattern analysis.',
-    problem: 'Organizations struggle to detect accidental exposure of sensitive data (API keys, PII, internal tokens) across distributed developer repositories and cloud storage in real time.',
-    solution: 'Architected an automated threat-monitoring engine powered by Python NLP heuristics with a React/Node.js dashboard delivering instant security alert notifications and audit analytics.',
+    tagline: 'AI-powered privacy, DPDPA compliance & PII security platform built for Cyberathon.',
+    desc: 'Intelligent security and data-protection platform helping organizations identify sensitive privacy risks, scan exposed credentials/PII, and manage DPDPA compliance requirements.',
+    problem: 'Organizations handle sensitive personal data across distributed developer repositories and cloud storage without automated tools to audit exposed credentials and ensure DPDPA regulatory compliance.',
+    solution: 'Engineered an AI-assisted privacy and secret-scanning engine delivering automated risk assessments, DPDPA workflow automation, and real-time security threat webhooks.',
     keyFeatures: [
       'Automated PII & Secret Scanning Engine',
+      'AI-Assisted Privacy Risk Identification & Assessment',
+      'DPDPA-Oriented Compliance Workflow Support',
       'Role-Based Security Dashboard & Audit Logs',
-      'Real-Time Threat Notifications & Webhooks',
-      'Multi-Repository Compliance Risk Analytics'
+      'Real-Time Threat Notifications & Webhooks'
     ],
-    tech: ['React', 'Node.js', 'MongoDB', 'Python', 'Tailwind CSS'],
+    tech: ['Python', 'React', 'Node.js', 'MongoDB', 'Privacy Engineering', 'NLP'],
     featured: true,
-    github: 'https://github.com/saikriz898/Datasential',
-    link: 'https://github.com/saikriz898/Datasential',
-    color: 'from-blue-500/20 to-indigo-600/20',
+    github: 'https://github.com/Surya-RedOps/DPDPA_Guardian',
+    link: 'https://github.com/Surya-RedOps/DPDPA_Guardian',
+    color: 'from-indigo-600/20 to-blue-500/20',
     iconName: 'ShieldCheck',
-    metrics: 'Cyberathon ’26 Finalist Project'
+    metrics: 'Cyberathon ’26 Participant · DPDPA Guardian'
+  },
+  {
+    id: 'mindbridge-ai',
+    title: 'MindBridge — AI Mental Health Support',
+    category: 'Design Thinking / Healthcare AI',
+    date: '2026',
+    tagline: 'Human-centered AI mental health monitoring & support platform.',
+    desc: 'Human-centered mental health platform combining clinical assessments, mood tracking, AI companionship, journal sentiment analysis, therapist booking, and crisis intervention.',
+    problem: 'Individuals lack continuous, non-stigmatizing mental health support, leading to late intervention during psychological stress.',
+    solution: 'Designed a human-centered user journey (Assessment → Monitoring → Reflection → AI Companion → Therapist Booking) backed by Next.js, Groq/Llama AI, and Upstash Redis.',
+    keyFeatures: [
+      'PHQ-9, GAD-7 & PSS Clinical Assessments & Scoring',
+      'Daily Mood, Sleep, Emotion & Trigger Tracking',
+      'Groq / Llama AI Supportive Companion & Coping Strategies',
+      'Journal Sentiment Analysis & Well-Being Analytics',
+      'Therapist Discovery, Booking & Direct Helpline Access'
+    ],
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Drizzle ORM', 'Groq / Llama', 'Upstash Redis'],
+    featured: true,
+    github: 'https://github.com/saikriz898/MindBridge-An-AI-Powered-Mental-Health-Monitoring-and-Support-System',
+    link: 'https://github.com/saikriz898/MindBridge-An-AI-Powered-Mental-Health-Monitoring-and-Support-System',
+    color: 'from-purple-500/20 to-pink-500/20',
+    iconName: 'Globe',
+    metrics: 'Design Thinking AI Project'
+  },
+  {
+    id: 'reux-evaluation',
+    title: 'REUX — AI Academic Evaluation Platform',
+    category: 'Academic AI / Full-Stack',
+    date: '2026',
+    tagline: 'AI-powered evaluation assessing conceptual understanding & reasoning over rote memorization.',
+    desc: 'AI-powered academic evaluation platform designed to assess students based on conceptual understanding and reasoning. Combines automated subjective answer evaluation, academic analytics, weak-concept detection, anti-cheating controls, reporting, and notifications.',
+    problem: 'Traditional online evaluation relies on rote multiple-choice questions or manual subjective grading, lacking automated conceptual gap detection and proctoring controls.',
+    solution: 'Engineered a full-stack platform using React 18, Node.js/Express, Drizzle ORM + Neon PostgreSQL, and Groq/Llama 3 for conceptual AI answer evaluation, automated weak-topic identification, and tab-switch anti-cheat logs.',
+    keyFeatures: [
+      'AI-Powered Conceptual Evaluation of Subjective Answers',
+      'Automated Weak-Concept & Individual Gap Analytics',
+      'Anti-Cheat Controls (Tab-Switch Logs, Copy/Paste Prevention)',
+      'Student & Educator Interactive Dashboards (Recharts)',
+      'Professional PDF Result Cards & Excel Reports (jsPDF / SheetJS)',
+      'JWT Access/Refresh Tokens & Bcrypt Password Protection'
+    ],
+    tech: ['React 18', 'Vite', 'Tailwind CSS', 'Node.js', 'Express.js', 'PostgreSQL', 'Drizzle ORM', 'Groq / Llama 3', 'JWT'],
+    featured: true,
+    github: 'https://github.com/saikriz898/reux-concept-evaluation-system',
+    link: 'https://github.com/saikriz898/reux-concept-evaluation-system',
+    color: 'from-blue-600/20 to-indigo-600/20',
+    iconName: 'GraduationCap',
+    metrics: 'Academic AI System'
+  },
+  {
+    id: 'smart-coffee-vending',
+    title: 'Smart Coffee Vending System',
+    category: 'Enterprise Java / Systems',
+    date: '2025',
+    tagline: 'Enterprise Java desktop application with multi-layer MVC architecture & MySQL persistence.',
+    desc: 'Java-based smart coffee vending application built to demonstrate enterprise application architecture, database integration, secure authentication, inventory management, transaction workflows, and administrative analytics.',
+    problem: 'Legacy desktop vending interfaces lack modular multi-layer architecture, transactional integrity, automated unit testing, and real-time inventory telemetry.',
+    solution: 'Built a 4-layer MVC enterprise application using Java 11+, Swing GUI, MySQL 8, Maven, and Docker with BCrypt password hashing, connection pooling, and JUnit 5 test coverage.',
+    keyFeatures: [
+      'Built 4-Layer MVC Architecture (Presentation, Service, DAO, DB)',
+      'Customer Registration, Menu Browsing & Wallet Checkout',
+      'Admin Dashboard for Inventory, Orders & Sales Analytics',
+      'MySQL Transactional Integrity & Connection Pooling',
+      'Password Hashing, SQLi Prevention & Health Checks',
+      'JUnit 5 Unit/Integration Tests & Docker Support'
+    ],
+    tech: ['Java 11+', 'Java Swing', 'MySQL 8', 'Maven', 'JUnit 5', 'Docker', 'SLF4J'],
+    featured: true,
+    github: 'https://github.com/saikriz898/smart-coffee-vending-system',
+    link: 'https://github.com/saikriz898/smart-coffee-vending-system',
+    color: 'from-amber-600/20 to-orange-600/20',
+    iconName: 'Coffee',
+    metrics: 'Enterprise Java App'
   },
   {
     id: 'eshwar-eventsphere',
@@ -90,9 +241,9 @@ export const projectsData: Project[] = [
   {
     id: 'grievance-system',
     title: 'Grievance Management System',
-    category: 'Full-Stack / SIH',
+    category: 'Full-Stack Web App',
     date: 'Oct 2025',
-    tagline: 'Institutional issue escalation platform built for Smart India Hackathon.',
+    tagline: 'Institutional issue escalation and ticket resolution platform.',
     desc: 'Full-stack institutional management system enabling students and staff to log, track, and resolve operational complaints with automated SLA tracking.',
     problem: 'Unstructured complaints in institutions get delayed without transparent status tracking and clear administrative accountability.',
     solution: 'Engineered a secure React + Node.js platform with MySQL relational persistence, JWT auth, SLA ticket routing, and real-time progress timelines.',
@@ -108,7 +259,7 @@ export const projectsData: Project[] = [
     link: 'https://github.com/saikriz898/Grievance-Management-System',
     color: 'from-blue-600/20 to-cyan-500/20',
     iconName: 'Layout',
-    metrics: 'Smart India Hackathon Build'
+    metrics: 'Production Web App'
   },
   {
     id: 'cryptoalertpro',
@@ -289,77 +440,162 @@ export const experienceData: Experience[] = [
     type: 'Internship',
     duration: 'Dec 2025',
     location: 'Chennai, India',
-    desc: 'Engineered a full-stack School Management ERP platform to streamline institutional academic workflows. Developed role-based admin and teacher portals for managing admissions, student grades, and real-time attendance.',
+    desc: 'Engineered a full-stack School Management ERP platform managing student admissions, academic rosters, and multi-role RBAC portals.',
     details: [
-      'Architected modular Express backend APIs handling multi-role RBAC permissions.',
-      'Designed MongoDB document collections for student rosters and attendance records.',
-      'Built responsive React frontend dashboards with low latency query filtering.',
-      'Integrated authentication middleware for secure administrative access.'
+      'Architected modular Express backend APIs with RBAC authentication.',
+      'Designed responsive React dashboards for student & faculty rosters.'
     ],
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
     link: 'https://aptitudeguru.in',
     github: 'https://github.com/saikriz898/',
-    impact: 'Engineered production ERP system for student & faculty administrative workflows.'
+    impact: 'Production ERP software for institutional workflows.',
+    upcoming: false,
+    status: 'Completed'
+  },
+  {
+    id: 'upcoming-opportunities',
+    company: 'Open for Opportunities',
+    role: 'Upcoming Software Engineering Roles',
+    type: 'Upcoming',
+    duration: '2026',
+    location: 'Remote / On-Site',
+    desc: 'Actively seeking 2026 software engineering internships and full-stack developer roles. Ready to build scalable web architecture.',
+    details: [
+      'Available for Full-Stack, Web & Systems Developer roles.',
+      'Core stack: React, Node.js, C++, Python, PostgreSQL & MongoDB.'
+    ],
+    tech: ['Full-Stack', 'Software Engineering', 'Systems Architecture'],
+    link: '#contact',
+    github: 'https://github.com/saikriz898',
+    impact: 'Ready for production engineering teams.',
+    upcoming: true,
+    status: 'Available'
   }
 ];
 
 export const certificationsData: Certification[] = [
   {
-    id: 'dsa-abdul-bari',
-    title: 'Mastering Data Structures & Algorithms using C/C++',
-    issuer: 'Udemy (Instructor: Abdul Bari)',
-    date: 'May 2025',
-    desc: 'In-depth 58.5-hour rigorous training in algorithm design, memory management, recursion, trees, graphs, and dynamic programming optimization.',
-    link: '#',
-    tags: ['C++', 'Data Structures', 'Algorithms', 'Memory Optimization'],
-    hours: '58.5 Hours'
-  },
-  {
     id: 'c-spoken-tutorial',
     title: 'C Programming National Certification',
     issuer: 'Spoken Tutorial – IIT Bombay',
+    category: 'National Certification',
     date: '2024',
     desc: 'National certification exam conducted remotely by IIT Bombay covering C memory model, pointers, file handling, and structured programming. Passed with distinction.',
-    link: '#',
-    tags: ['C', 'IIT Bombay', 'Score: 87.5%'],
-    score: '87.5% (Distinction)'
+    link: 'https://spoken-tutorial.org',
+    tags: ['C', 'IIT Bombay', 'Distinction', 'Memory Management'],
+    score: '87.5% (Distinction)',
+    certificateId: 'IITB-ST-C-2024-875',
+    featured: true,
+    iconName: 'Award',
+    skillsLearned: [
+      'C Memory Model & Pointer Arithmetic',
+      'Dynamic Memory Allocation (malloc/free)',
+      'Low-Level File Handling & Streams',
+      'Structs, Unions & Bitwise Operations',
+      'Algorithmic Logic in Structured C'
+    ]
+  },
+  {
+    id: 'dsa-abdul-bari',
+    title: 'Mastering Data Structures & Algorithms using C/C++',
+    issuer: 'Udemy (Instructor: Abdul Bari)',
+    category: 'Algorithms & DSA',
+    date: 'May 2025',
+    desc: 'In-depth 58.5-hour rigorous training in algorithm design, memory management, recursion, trees, graphs, and dynamic programming optimization.',
+    link: 'https://www.udemy.com',
+    tags: ['C++', 'Data Structures', 'Algorithms', 'Memory Optimization'],
+    hours: '58.5 Hours',
+    score: 'Mastery Completed',
+    certificateId: 'UC-585-DSA-AB-2025',
+    featured: true,
+    iconName: 'Cpu',
+    skillsLearned: [
+      'Recursion & Backtracking Algorithms',
+      'AVL Trees, B-Trees & Binary Heap Trees',
+      'Graph Traversals (BFS, DFS, Dijkstra, Prim)',
+      'Dynamic Programming & Memoization',
+      'Time & Space Complexity Optimization'
+    ]
   },
   {
     id: 'cpp-spoken-tutorial',
     title: 'C++ Programming National Certification',
     issuer: 'Spoken Tutorial – IIT Bombay',
+    category: 'National Certification',
     date: '2024',
     desc: 'Certification exam conducted by IIT Bombay testing object-oriented design, operator overloading, and inheritance hierarchies in C++.',
-    link: '#',
-    tags: ['C++', 'IIT Bombay', 'Score: 62.5%'],
-    score: '62.5%'
+    link: 'https://spoken-tutorial.org',
+    tags: ['C++', 'IIT Bombay', 'OOP', 'Inheritance'],
+    score: '62.5%',
+    certificateId: 'IITB-ST-CPP-2024-625',
+    featured: false,
+    iconName: 'GraduationCap',
+    skillsLearned: [
+      'Object-Oriented Architecture (Encapsulation, Polymorphism)',
+      'Operator Overloading & Custom Constructors',
+      'Inheritance Hierarchies & Virtual Functions',
+      'C++ Standard I/O Streams & Exception Blocks'
+    ]
   },
   {
     id: 'js-bootcamp',
     title: 'JavaScript Web Engineering Bootcamp',
     issuer: 'LetsUpgrade + NSDC + GDG MAD',
+    category: 'Web Engineering',
     date: 'Mar 2025',
     desc: 'Intensive 3-day bootcamp covering modern ES6+ syntax, asynchronous JS, DOM execution context, and RESTful API integrations.',
-    link: '#',
-    tags: ['JavaScript', 'ES6+', 'Web Dev']
+    link: 'https://letsupgrade.in',
+    tags: ['JavaScript', 'ES6+', 'Web Dev', 'Async/Await'],
+    hours: '3-Day Intensive',
+    certificateId: 'LU-NSDC-JS-2025-88',
+    featured: false,
+    iconName: 'Code2',
+    skillsLearned: [
+      'ES6+ Promises, Async/Await & Event Loop',
+      'DOM Manipulation & Event Propagation',
+      'Fetch API & RESTful Endpoints Ingestion',
+      'Modular JavaScript Bundling Concepts'
+    ]
   },
   {
     id: 'cpp-bootcamp',
     title: 'C++ OOP Intensive Bootcamp',
     issuer: 'LetsUpgrade + NSDC',
+    category: 'Systems Programming',
     date: 'Jan 2025',
     desc: 'Comprehensive practical training covering C++ class abstractions, templates, exception handling, and optimized I/O operations.',
-    link: '#',
-    tags: ['C++', 'OOP', 'NSDC']
+    link: 'https://letsupgrade.in',
+    tags: ['C++', 'OOP', 'NSDC', 'Templates'],
+    hours: 'Bootcamp',
+    certificateId: 'LU-NSDC-CPP-2025-41',
+    featured: false,
+    iconName: 'ShieldCheck',
+    skillsLearned: [
+      'Class Abstractions & Access Modifiers',
+      'Generic Programming with C++ Templates',
+      'Structured Exception Handling',
+      'I/O Optimization Techniques'
+    ]
   },
   {
     id: 'python-beginners',
     title: 'Python Software Engineering Fundamentals',
     issuer: 'Udemy (Instructor: Cyber Quince)',
+    category: 'Systems Programming',
     date: 'Oct 2024',
     desc: 'Foundational course covering Python data structures, module architecture, file I/O, and object-oriented scripting.',
-    link: '#',
-    tags: ['Python', 'Scripting', 'Basics']
+    link: 'https://www.udemy.com',
+    tags: ['Python', 'Scripting', 'Basics', 'File I/O'],
+    hours: 'Foundational',
+    certificateId: 'UC-PY-FUND-2024-90',
+    featured: false,
+    iconName: 'BookOpen',
+    skillsLearned: [
+      'Python Native Data Structures & Methods',
+      'Module Architecture & Package Management',
+      'File System I/O & Exception Blocks',
+      'Object-Oriented Scripting Fundamentals'
+    ]
   }
 ];
 
@@ -390,7 +626,7 @@ export const achievementsData: Achievement[] = [
     event: 'SRM Institute of Science and Technology',
     year: 'Mar 2026',
     desc: 'Developed Datasential Security AI to scan and audit organizational repositories for credential leaks and PII exposures during national cybersecurity event.',
-    stat: 'Finalist',
+    stat: 'Participant',
     badge: 'Cybersecurity',
     iconName: 'ShieldCheck'
   },
@@ -423,8 +659,15 @@ export const educationData: EducationItem[] = [
     degree: 'B.Tech in Computer Science & Engineering',
     school: 'Sri Eshwar College of Engineering',
     desc: 'Specializing in core computer science, algorithm analysis, database systems, web architecture, and AI models.',
-    highlights: 'Sem 4 • CGPA: 7.6 / 10',
-    accent: 'bg-indigo-600'
+    highlights: 'Sem 4 • CGPA: 7.54 / 10',
+    accent: 'bg-indigo-600',
+    courses: [
+      'Data Structures & Algorithms',
+      'Object-Oriented Programming (Java / C++)',
+      'Database Management Systems',
+      'Operating Systems & Networks',
+      'AI & Machine Learning'
+    ]
   },
   {
     id: 'hsc',
@@ -433,7 +676,12 @@ export const educationData: EducationItem[] = [
     school: 'PKD Matric Higher Secondary School',
     desc: 'Focused on Advanced Physics, Chemistry, Mathematics, and Computer Science fundamentals.',
     highlights: 'Score: 73.3%',
-    accent: 'bg-slate-900'
+    accent: 'bg-slate-900',
+    courses: [
+      'Computer Science Fundamentals',
+      'Mathematics & Logic',
+      'Physics & Chemistry'
+    ]
   },
   {
     id: 'sslc',
@@ -442,7 +690,8 @@ export const educationData: EducationItem[] = [
     school: 'PKD Matric Higher Secondary School',
     desc: 'Developed foundational mathematical logic, analytical reasoning, and core science concepts.',
     highlights: 'Score: 66.8%',
-    accent: 'bg-slate-400'
+    accent: 'bg-slate-400',
+    courses: ['Mathematics', 'Science & Logic', 'General Sciences']
   }
 ];
 

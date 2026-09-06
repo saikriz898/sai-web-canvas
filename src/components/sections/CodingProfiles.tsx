@@ -15,7 +15,7 @@ export const CodingProfiles: React.FC = () => {
     <section id="coding-profiles" className="w-full py-16 lg:py-20 bg-[#fafaf8] border-t border-neutral-200/80 scroll-mt-20">
       <div className="container-custom">
         <div className="mb-8 text-left">
-          <span className="font-mono text-xs font-semibold uppercase tracking-wider text-indigo-600">
+          <span className="font-mono text-xs font-bold uppercase tracking-wider text-neutral-900 bg-neutral-100 border border-neutral-200/90 px-2.5 py-1 rounded-md">
             PROBLEM SOLVING PROOF
           </span>
           <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 font-display tracking-tight mt-1">

@@ -7,6 +7,7 @@ interface SectionHeaderProps {
   highlightTitle?: string;
   description?: string;
   align?: 'center' | 'left';
+  className?: string;
 }
 
 export const SectionHeader: React.FC<SectionHeaderProps> = ({
@@ -14,12 +15,14 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
   title,
   highlightTitle,
   description,
-  align = 'left'
+  align = 'left',
+  className
 }) => {
   const isCenter = align === 'center';
+  const marginClass = className !== undefined ? className : 'mb-12 md:mb-16';
 
   return (
-    <div className={`mb-12 md:mb-16 ${isCenter ? 'text-center max-w-3xl mx-auto' : 'max-w-3xl'}`}>
+    <div className={`${marginClass} ${isCenter ? 'text-center max-w-3xl mx-auto' : 'max-w-3xl'}`}>
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         whileInView={{ opacity: 1, y: 0 }}
